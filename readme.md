@@ -1,6 +1,6 @@
 # dev
 ```
-$ vite dev
+$ vite
 ```
 
 # build
