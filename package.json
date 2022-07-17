@@ -6,14 +6,19 @@
     "build": "vite build",
     "preview": "vite preview"
   },
+  "type": "module",
   "devDependencies": {
-    "vite": "^2.7.2"
+    "vite": "^3.0.0"
   },
   "dependencies": {
-    "esbuild-darwin-arm64": "^0.14.11",
-    "jquery": "^3.6.0",
-    "pug": "^3.0.2",
-    "sass": "^1.47.0",
-    "vite-plugin-imagemin": "^0.5.1"
+    "@macropygia/vite-plugin-glob-input": "^0.0.13",
+    "@macropygia/vite-plugin-imagemin-cache": "^0.0.11",
+    "@macropygia/vite-plugin-pug-static": "^0.0.15",
+    "@squoosh/lib": "^0.4.0",
+    "autoprefixer": "^10.4.7",
+    "esbuild-darwin-arm64": "^0.14.49",
+    "postcss": "^8.4.14",
+    "sass": "^1.53.0",
+    "terser": "^5.14.2"
   }
 }
