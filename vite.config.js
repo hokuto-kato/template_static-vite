@@ -13,6 +13,9 @@ export default defineConfig(({ mode }) => {
 			open: true,
 			host: true,
 		},
+		css: {
+			devSourcemap: true,
+		},
 		build: {
 			outDir: "../dist",
 			emptyOutDir: true,
