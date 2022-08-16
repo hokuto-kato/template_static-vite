@@ -1,5 +1,6 @@
-import { ImagePool } from "@squoosh/lib"
-import { cpus } from "os"
+import { ImagePool } from '@squoosh/lib'
+import { cpus } from 'os'
+
 global.navigator = undefined
 const imagePool = new ImagePool(cpus().length)
 
@@ -15,10 +16,10 @@ const pngEncodeOptions = {
 	},
 }
 
-export default function squoosh() {
+export default function squoosh () {
 	return {
-		name: "squoosh",
-		async generateBundle(_options, bundle) {
+		name: 'squoosh',
+		async generateBundle (_options, bundle) {
 			// JPGとPNGを抽出
 			const imageFileList = Object.keys(bundle).filter((key) => {
 				const regex = /\.(jpe?g|png)$/i
@@ -31,7 +32,7 @@ export default function squoosh() {
 			})
 
 			await Promise.all(
-				imagePoolList.map(async(item) => {
+				imagePoolList.map(async (item) => {
 					const { image, file } = item
 					if (/\.(jpe?g)$/i.test(file)) {
 						await image.encode(jpgEncodeOptions)
