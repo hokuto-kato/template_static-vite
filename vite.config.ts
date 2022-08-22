@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import input from '@macropygia/vite-plugin-glob-input'
 import pug from '@macropygia/vite-plugin-pug-static'
-import squoosh from './plugin/squoosh'
+import squoosh from './plugins/squoosh'
 
 export default defineConfig(({ mode }) => {
 	console.log('** mode **', mode)
