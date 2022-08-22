@@ -21,11 +21,14 @@
 		"@macropygia/vite-plugin-pug-static": "^0.0.17",
 		"@squoosh/lib": "^0.4.0",
 		"autoprefixer": "^10.4.8",
-		"esbuild-darwin-arm64": "^0.15.3",
+		"esbuild-darwin-arm64": "^0.15.5",
 		"eslint": "^8.0.1",
 		"postcss": "^8.4.16",
 		"sass": "^1.54.4",
 		"terser": "^5.14.2",
 		"typescript": "*"
+	},
+	"volta": {
+		"node": "16.17.0"
 	}
 }
